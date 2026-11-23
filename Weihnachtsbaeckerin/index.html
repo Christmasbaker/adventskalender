@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#172c40">
+  <title>Die Weihnachtsbäckerin des Grafen</title>
+  <meta name="description" content="Ein winterliches Märchen in 24 Adventskapiteln.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="kopf">
+    <div class="krone" aria-hidden="true">♛</div>
+    <p class="kleiner-titel">Ein winterliches Märchen</p>
+    <h1>Die Weihnachtsbäckerin<br>des Grafen</h1>
+    <p class="untertitel">Ein Adventskalender von Linda</p>
+  </header>
+
+  <main>
+    <section class="maerchenwelt" aria-label="Das winterliche Dorf und Schloss">
+      <div class="himmel" aria-hidden="true">
+        <span class="stern stern-1">✦</span>
+        <span class="stern stern-2">✧</span>
+        <span class="stern stern-3">✦</span>
+      </div>
+
+      <div class="berge" aria-hidden="true">🏔️ 🏔️ 🏔️</div>
+
+      <div class="wald wald-hinten" aria-hidden="true">
+        🌲 🌲 🌲 🌲 🌲 🌲 🌲
+      </div>
+
+      <div class="see" aria-hidden="true"></div>
+
+      <div class="fels" aria-hidden="true">
+        <div class="schloss">🏰</div>
+        <div class="fels-text">Das Schloss des Grafen</div>
+      </div>
+
+      <div class="wald wald-vorne" aria-hidden="true">
+        🌲 🌲 🌲 🌲 🌲 🌲 🌲 🌲
+      </div>
+
+      <div class="dorf" aria-hidden="true">
+        <div class="haus">🏠</div>
+        <div class="haus haus-mitte">🏘️</div>
+        <div class="haus">🏠</div>
+      </div>
+
+      <div class="platz">
+        <p class="dorf-name">Willkommen in Bad Werdenich</p>
+        <p class="dorf-text">
+          Zwischen alten Gassen, Weihnachtsmärkten und Schlossmauern wird die Liebe ein Teil von dir. 
+      </div>
+    </section>
+
+    <section class="kalender">
+      <p class="kapitel-zeile">24 kleine Türen · 24 Kapitel</p>
+      <h2>Öffne ein Plätzchen</h2>
+      <p class="erklaerung">
+        Jeden Tag wartet ein neues Stück der Geschichte auf dich.
+      </p>
+
+      <div id="adventskalender" class="plaetzchen-raster">
+        <!-- Die 24 Türen werden durch JavaScript erstellt. -->
+      </div>
+
+      <p class="fussnote">
+        ✧ Mach es dir gemütlich und tauche ein in unser Wintermärchen. ✧
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Mit Liebe gebacken und erzählt ♡</p>
+    <p>Die Weihnachtsbäckerin des Grafen</p>
+  </footer>
+
+
+<dialog id="lese-fenster" class="lese-fenster">
+  <div class="lese-kopf">
+    <span class="lese-kopf-leer"></span>
+
+    <div class="lese-aktionen">
+     <button
+  id="lesezeichen-speichern"
+  type="button"
+  aria-pressed="false"
+>  🔖 Lesezeichen setzen
+</button>
+      <button id="lese-schliessen" type="button" aria-label="Schließen">
+        ✕
+      </button>
+    </div>
+  </div>
+
+  <p id="lesezeichen-status" aria-live="polite"></p>
+
+  <h2 id="kapitel-ueberschrift" class="kapitel-ueberschrift">
+    Kapitel 1
+  </h2>
+
+  <div class="lese-seite">
+    <button id="seite-zurueck" type="button" aria-label="Vorherige Seite">
+      ‹
+    </button>
+
+    <img
+      id="kapitel-seitenbild"
+      src=""
+      alt="Kapitel 1, Buchseite 1"
+    >
+
+    <button id="seite-weiter" type="button" aria-label="Nächste Seite">
+      ›
+    </button>
+  </div>
+
+  <p id="seitenzahl">Seite 1 von 8</p>
+</dialog>
+</body>
+</html>
+<span class="lese-kopf-leer">Kapitel 1</span>
